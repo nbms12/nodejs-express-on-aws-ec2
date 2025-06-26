@@ -8,7 +8,4 @@
 #!/bin/bash
 # application_stop.sh
 echo "Stopping Node.js application"
-sudo systemctl stop node-app || \
-sudo pkill -f "node" || \
-echo "No node processes found"
-exit 0
+sudo pkill -f node
